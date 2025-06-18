@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         snowContainer.appendChild(snowflake);
 
         snowflake.addEventListener('mouseover', () => {
-            snowflake.style.transform = 'scale(2)';
-            snowflake.style.opacity = '0';
+            snowflake.classList.add('explode');
             setTimeout(() => snowflake.remove(), 500);
         });
 
